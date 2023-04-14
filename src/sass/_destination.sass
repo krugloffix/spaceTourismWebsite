@@ -1,0 +1,117 @@
+.destination
+    width: 100%
+    height: 100vh
+    min-height: 900px
+    background: url('../assets/destination/background-destination-desktop.jpg') no-repeat center
+    background-size: cover
+
+    &__container
+        position: absolute
+        top: 210px
+        left: 50%
+        transform: translateX(-50%)
+        width: 100%
+        align-items: center
+
+    &__wrapper
+        grid-column: 2 / 12
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(2, fit-content(100%))
+        gap: 64px
+        align-items: center
+
+    &__title
+        margin: 0
+        span
+            margin-right: 28px
+            font-weight: 700
+            opacity: 0.25
+
+    &__content
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 60px
+        align-items: center
+        justify-items: center
+        min-height: 500px
+        img
+            max-width: 445px
+            max-height: 445px
+
+    &__list
+        padding: 0
+        list-style-type: none
+        display: grid
+        gap: 35px
+        margin-bottom: 37px
+
+    &__item
+        padding-bottom: 15px
+        position: relative
+        font-size: 16px
+        line-height: 19px
+        letter-spacing: 2.7px
+        color: $color-lightBlue
+        text-transform: uppercase
+        cursor: pointer
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 0
+            height: 3px
+            background: $color-white
+            opacity: 0
+            transition: opacity .3s linear, width .3s linear, color .3s linear
+        &:hover::after
+            width: 100%
+            opacity: 0.5
+        &--active
+            color: $color-white
+            &::after
+                width: 100%
+                opacity: 1
+
+    &__name
+        margin: 0 0 14px
+        font-family: $family-bellefair
+        font-weight: 400
+        font-size: 100px
+        line-height: 115px
+        color: $color-white
+        text-transform: uppercase
+
+    &__description
+        min-height: 150px
+        margin-bottom: 28px
+        padding-bottom: 54px
+        position: relative
+        color: $color-lightBlue
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 1px
+            background: #383B4B
+
+    &__numbers
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+
+    &__distance
+        margin: 0
+        span
+            display: block
+            margin-bottom: 12px
+            color: $color-lightBlue
+
+    &__time
+        margin: 0
+        span
+            display: block
+            margin-bottom: 12px
+            color: $color-lightBlue

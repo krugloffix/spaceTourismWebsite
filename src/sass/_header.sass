@@ -1,0 +1,90 @@
+.header
+    z-index: 10
+    margin-top: 40px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+    &__container
+        width: 100%
+        align-items: center
+
+    &__wrapper
+        grid-column: 2 / 13
+        display: grid
+        grid-template-columns: fit-content(100%) 1fr 2fr
+        justify-items: end
+        align-items: center
+
+    &__logo
+        grid-column: 1 / 2
+        cursor: pointer
+        width: 48px
+        height: 48px
+
+    &__line
+        grid-column: 2 / 3
+        width: 100%
+        height: 100%
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 5%
+            width: 100%
+            height: 1px
+            background-color: $color-white
+            opacity: 0.25
+            z-index: 10
+    &__list
+        grid-column: 3 / 4
+        margin: 0
+        padding: 0
+        height: 100%
+        width: 100%
+        list-style-type: none
+        display: grid
+        grid-template-columns: repeat(4, fit-content(100%))
+        gap: 48px
+        align-items: center
+        justify-content: center
+        background: rgba(255, 255, 255, 0.04)
+        backdrop-filter: blur(40.7742px)
+
+    &__item
+        cursor: pointer
+        position: relative
+        &:first-child
+            margin-left: 48px
+        &:last-child
+            margin-right: 48px
+
+    &__link
+        display: inline-block
+        padding: 38px 0
+        span
+            font-weight: 700
+            display: inline-block
+            margin-right: 12px
+        &::after
+            content: ''
+            position: absolute
+            width: 0
+            height: 3px
+            bottom: 0
+            left: 0
+            background-color: $color-white
+            opacity: 0
+            transition: opacity .3s linear, width .3s linear, height .2s linear
+        &--active::after
+            opacity: 1
+            width: 100%
+        &:hover::after
+            opacity: 0.5
+            width: 100%
+        &--active
+            &:hover::after
+                opacity: 1

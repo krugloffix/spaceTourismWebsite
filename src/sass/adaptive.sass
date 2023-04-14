@@ -1,0 +1,303 @@
+@media only screen and (max-width: 1440px)
+    .container
+        grid-template-columns: repeat(10, 1fr)
+    .header__wrapper
+        grid-column: 2 / 11
+    .home__wrapper
+        grid-column: 2 / 11
+    .destination__wrapper
+        grid-column: 2 / 10
+    .crew__wrapper
+        grid-column: 2 / 10
+    .technology__wrapper
+        grid-column: 2 / 11
+
+@media only screen and (max-width: 1120px)
+    .header__link
+        span
+            display: none
+    .home__explore
+        width: 350px
+        height: 350px
+        &--inner
+            width: 70%
+            height: 70%
+    .technology__img
+        width: 350px
+        height: 350px
+
+@media only screen and (max-width: 1024px)
+    .header__line
+        display: none
+    .home__container
+        top: 200px
+    .home__wrapper
+        grid-column: 1 / 11
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr fit-content(100%)
+        gap: 0
+    .home__info
+        grid-column: 1 / 2
+        grid-row: 1 / 2
+        text-align: center
+    .home__text
+        margin: 0 auto
+        padding: 0 15px
+    .home__explore
+        grid-column: 1 / 2
+        grid-row: 2 / 3
+        width: 300px
+        height: 300px
+        justify-self: center
+        &--inner
+            width: 80%
+            height: 80%
+    .destination__content img
+        max-width: 345px
+        max-height: 345px
+    .crew__content
+        gap: 0
+    .technology__content
+        grid-template-columns: fit-content(100%) 1fr
+        grid-template-rows: repeat(2, fit-content(100%))
+    .technology__info
+        grid-column: 1 / 3
+        grid-row: 2 / 3
+
+@media (max-width: 950px)
+    .destination__container
+        padding: 0 30px
+    .destination__wrapper
+        grid-column: 1 / 11
+    .destination__content img
+        max-width: 300px
+        max-height: 300px
+
+@media only screen and (max-width: 768px)
+    h1
+        line-height: 150px
+        font-size: 20vw
+    .heading__small
+        font-size: 40px
+        line-height: 46px
+    .page__preheading
+        font-size: 20px
+        line-height: 24px
+    p
+        font-size: 16px
+        line-height: 28px
+    .container
+        grid-template-columns: repeat(6, 1fr)
+    .header__wrapper
+        grid-column: 1 / 7
+        grid-template-columns: fit-content(100%) 1fr
+    .header__logo
+        margin-left: 24px
+    .home
+        min-height: 1024px
+        background: url('../assets/home/background-home-tablet.jpg') no-repeat center
+        background-size: cover
+    .home__wrapper
+        grid-column: 1 / 7
+        gap: 100px
+    .home__explore
+        width: 242px
+        height: 242px
+        justify-self: center
+        &--inner
+            width: 100%
+            height: 100%
+    .destination
+        min-height: 1100px
+    .destination__container
+        top: 150px
+        padding: 0
+    .destination__wrapper
+        padding: 0 24px
+        grid-column: 1 / 7
+        gap: 60px
+    .destination__content
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(2, fit-content(100%))
+        gap: 53px
+    .destination__info
+        text-align: center
+    .destination__list
+        margin-bottom: 32px
+        gap: 26px
+        justify-content: center
+    .destination__name
+        font-size: 80px
+        line-height: 92px
+    .destination__description
+        min-height: auto
+        width: 90%
+        margin: 0 auto 29px
+        padding-bottom: 49px
+    .crew
+        min-height: 1100px
+    .crew__container
+        top: 150px
+        padding: 0
+    .crew__wrapper
+        padding: 0 24px
+        grid-column: 1 / 7
+        gap: 60px
+    .crew__content
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3, fit-content(100%))
+        justify-content: center
+    .crew__img
+        grid-column: 1 / 2
+        grid-row: 3 / 4
+        height: auto
+    .crew__info
+        justify-self: center
+        text-align: center
+    .crew__slider
+        margin-bottom: 40px
+        justify-self: center
+        grid-row: 2 / 3
+    .crew__position
+        font-size: 40px
+        line-height: 46px
+    .technology
+        min-height: 1100px
+    .technology__container
+        top: 150px
+    .technology__wrapper
+        grid-column: 1 / 7
+    .technology__title
+        padding: 0 24px
+    .technology__content
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3, fit-content(100%))
+        gap: 44px
+    .technology__img
+        grid-column: 1 / 2
+        grid-row: 1 / 2
+        width: 100vw
+        height: 100%
+    .technology__slider
+        grid-column: 1 / 2
+        grid-row: 2 / 3
+        gap: 16px
+        justify-content: center
+    .technology__item
+        width: 60px
+        height: 60px
+        span
+            font-size: 24px
+            line-height: 28px
+            letter-spacing: 1.5px
+    .technology__info
+        grid-column: 1 / 2
+        grid-row: 3 / 4
+        text-align: center
+    .technology__text
+        max-width: 80%
+        margin: 0 auto
+    .nfound__title
+        grid-column: 1 / 7
+
+@media only screen and (max-width: 375px)
+    h1
+        font-size: 22vw
+        line-height: 100px
+    .heading__small
+        font-size: 24px
+        line-height: 28px
+    .page__preheading
+        font-size: 16px
+        line-height: 19px
+    p
+        font-size: 15px
+        line-height: 25px
+    .home
+        min-height: 700px
+        background: url('../assets/home/background-home-mobile.jpg') no-repeat center
+        background-size: cover
+        align-items: center
+    .home__wrapper
+        row-gap: 100px
+    .home__explore
+        width: 150px
+        height: 150px
+        a
+            font-size: 20px
+            line-height: 23px
+            letter-spacing: 1.25px
+    .destination__item
+        font-size: 14px
+        line-height: 17px
+        letter-spacing: 2.3625px
+    .destination__name
+        font-size: 56px
+        line-height: 64px
+    .crew
+        min-height: 700px
+    .crew__container
+        align-items: start
+    .crew__wrapper
+        gap: 32px
+    .crew__img
+        grid-row: 1 / 2
+        width: 100%
+        height: 223px
+        display: flex
+        justify-content: center
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 1px
+            background: #383B4B
+        img
+            max-height: 100%
+    .crew__info
+        justify-self: center
+        text-align: center
+        grid-row: 3 / 4
+    .crew__position
+        font-size: 24px
+        line-height: 28px
+    .crew__slider
+        margin: 32px 0 32px
+        justify-self: center
+        grid-row: 2 / 3
+    .technology
+        min-height: 700px
+    .technology__item
+        width: 40px
+        height: 40px
+        span
+            font-size: 16px
+            line-height: 18px
+            letter-spacing: 1px
+    .technology__prename
+        font-size: 14px
+        line-height: 17px
+        letter-spacing: 2.3625px
+    .technology__img
+        overflow: hidden
+        img
+            height: 170px
+
+@media only screen and (max-width: 320px)
+    .container
+        grid-template-columns: repeat(2, 1fr)
+    .header__wrapper
+        grid-column: 1 / 3
+    .home__wrapper
+        grid-column: 1 / 3
+    .destination__wrapper
+        grid-column: 1 / 3
+    .crew__wrapper
+        grid-column: 1 / 3
+    .technology__wrapper
+        grid-column: 1 / 3
+    .nfound__title
+        grid-column: 1 / 3
