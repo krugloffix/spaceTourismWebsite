@@ -6,9 +6,9 @@ import logo from "../assets/shared/logo.svg";
 function Header() {
   const nav = [
     { id: 0, title: "home", url: "" },
-    { id: 0, title: "destination", url: "destination" },
-    { id: 0, title: "crew", url: "crew" },
-    { id: 0, title: "technology", url: "technology" },
+    { id: 1, title: "destination", url: "destination" },
+    { id: 2, title: "crew", url: "crew" },
+    { id: 3, title: "technology", url: "technology" },
   ];
 
   const [burger, setBurger] = React.useState(false);
