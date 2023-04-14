@@ -4,7 +4,7 @@
 
 <p><b>Space Tourism</b> is just a fun project that i made to practice my React knowledge. </p>
 
-👉 Live Demo: <a href='https://space-tourism-website-ashy.vercel.app/'>Space Tourism Demo</a>
+👉 Live Demo: <a href='https://space-tourism-website-irinakruglova.vercel.app/'>Space Tourism Demo</a>
 
 <h3>Build with:</h3>
 
